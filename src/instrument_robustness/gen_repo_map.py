@@ -39,7 +39,6 @@ TOP_LEVEL = {
     "pyproject.toml": "Package + dependency definition; extras like [pretrained] pull torch/transformers/panns.",
     "download_data.py": "RETIRED Google-Drive fetch. prep_data.py is the only supported dataset acquisition.",
     "README.md": "Project overview and how to run the pipeline.",
-    "internal/": "Working notes, planning docs, and internal review/audit records. Not part of the "
                  "published method; kept for provenance.",
 }
 

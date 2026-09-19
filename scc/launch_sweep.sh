@@ -134,7 +134,7 @@ COMMON="RISE_REPO=$REPO,RISE_DATA_ROOT=$DATA,RISE_NOISE_ROOT=$NOISE,RISE_DEMAND_
 # For when generation SUCCEEDED and the evaluations did not -- which is exactly what happened on
 # 2026-08-04, when all six aborted on FileExistsError against stale results while the 60,240-file
 # corpus sat there complete and validated. Regenerating in that situation burns 86 minutes to
-# reproduce bytes that already exist, which CLAUDE.md calls out by name: do not spend compute to
+# reproduce bytes that already exist, which the project guidelines call out by name: do not spend compute to
 # paper over a tool that cannot express "just the evals".
 #
 # The evals still verify the manifest themselves, so a corpus that is NOT complete cannot be

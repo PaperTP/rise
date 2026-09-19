@@ -268,3 +268,6 @@ all-samples/features/panns/*
 
 # Local agent/editor config — never part of the published repo
 .claude/
+
+# Working notes and internal review docs: local only, never published.
+internal/

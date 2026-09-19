@@ -39,7 +39,7 @@ honestly be placed beside them. Balanced accuracy and MCC are still recorded in 
 seed and every combiner -- the standing argument in this repo is that they, not macro-F1, are the
 right metric
 under class imbalance, and this file does not resolve that tension, it standardises on the metric
-the rest of the project already committed to. See internal/AUDIT_CHECKLIST.md #10.
+the rest of the project already committed to. See the project audit notes.
 """
 from __future__ import annotations
 
