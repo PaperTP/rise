@@ -88,7 +88,7 @@ HISTORICAL_EXTERNAL_WEIGHTS = {
         "sha256": "00cc195e1cbea756fc0afcb1ab823d639e31668c1a859f67941c29fda40741e3",
         "release_tag": "v1.0-panns-12class",
         "dataset_fingerprint": "89f126e290d0a9674e4e0a2b6344dcced32fa42ebe4e872006918e044f723073",
-        "download_url": "https://github.com/maxliu2k/rise/releases/download/v1.0-panns-12class/panns_finetune_philharmonia.pt",
+        "download_url": "https://github.com/PaperTP/rise/releases/download/v1.0-panns-12class/panns_finetune_philharmonia.pt",
     },
 }
 
