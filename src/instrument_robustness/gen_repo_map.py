@@ -31,7 +31,6 @@ TOP_LEVEL = {
     "models/": "All six trained weight files in one flat folder with self-describing names (assembled by bundle_weights.py).",
     "docs/": "Design and protocol docs, including the frozen noise and failure-analysis plans.",
     "tests/": "Unit tests: preprocessing, models, noise, robustness curves, and failure analysis.",
-    "legacy/": "Retired code and 9-class-era artifacts, kept for provenance. Not on the active path.",
     "configs/": "Configuration inputs consumed by the pipeline.",
     "data/": "Small tracked data inputs.",
     "pyproject.toml": "Package + dependency definition; extras like [pretrained] pull torch/transformers/panns.",

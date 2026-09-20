@@ -9,8 +9,7 @@ Several widely-installed packages ship exactly that. On this project's Windows c
 with `ModuleNotFoundError: No module named 'tests.test_noise'`, while the identical command
 worked on the SCC venv purely because nothing there had claimed the name.
 
-The loud failure is the lucky case. `scc/noise_generate.qsub`, `scc/svm_noise.qsub` and
-`scc/mert_noise.qsub` run `python -m unittest tests.test_noise -q` as a GATE before generating
+The loud failure is the lucky case. The noise generation and evaluation jobs run `python -m unittest tests.test_noise -q` as a GATE before generating
 or scoring anything. Had the shadowing package happened to contain a module of a matching name,
 that gate would have run someone else's passing tests and waved the job through.
 

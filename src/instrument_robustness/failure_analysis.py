@@ -241,7 +241,7 @@ def load_model_sweep(
             #
             # What stands in for it, and is strictly checkable: the dataset build identity below
             # must still agree across every condition, tests/test_noise.py asserts a chunked grid
-            # is sample-identical to a monolithic one, and scc/mert_ft_noise.qsub gates the whole
+            # is sample-identical to a monolithic one, and the noise job gates the whole
             # run on verify_noise_regeneration reproducing the frozen probe's committed
             # predictions label-for-label before scoring anything.
             #
@@ -327,7 +327,7 @@ def validate_shared_sweeps(sweeps: dict[str, ModelSweep]) -> None:
         #   * `noise_source` is compared PER WINDOW below -- which ESC-50 or DEMAND recording
         #     each of the 1,255 windows drew, in every condition. That is the exact property
         #     REPOSITORY_AUDIT.md records PANNs violating, and a hash cannot detect it;
-        #   * measured, not argued: scc/verify_regen_all.qsub regenerated one chunk of each of
+        #   * measured, not argued: a regeneration check regenerated one chunk of each of
         #     the three noise types and the frozen probe reproduced its committed per-window
         #     predictions 24/24 conditions, 1255/1255 labels each -- 30,120 windows.
         streamed = (
