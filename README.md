@@ -241,6 +241,7 @@ cluster-aware statistical analysis.
 ## License
 
 Source code in this repository is released under the MIT License; see `LICENSE`.
+Data and model weights are covered separately; see `NOTICE`.
 
 Data and model weights are not covered by it. The Philharmonia Orchestra sound
 samples are CC-BY-SA-4.0, the MERT checkpoint is CC-BY-NC-4.0 and therefore

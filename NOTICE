@@ -1,0 +1,12 @@
+The MIT License in LICENSE covers the source code in this repository only.
+
+Data and third-party model weights are not covered by it and retain their own
+licenses:
+
+  * Philharmonia Orchestra sound samples -- CC-BY-SA-4.0
+  * MERT checkpoint -- CC-BY-NC-4.0 (non-commercial use only)
+  * ESC-50 and DEMAND noise corpora -- see their upstream terms
+
+Derived files in this repository, including generated mixtures, extracted
+features, and fine-tuned checkpoints, inherit the terms of the data and weights
+they were produced from. Check the upstream licenses before redistributing.

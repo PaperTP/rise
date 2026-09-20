@@ -1,11 +1,3 @@
-The MIT License below applies to the source code in this repository.
-
-Datasets and third-party model weights are NOT covered by it and retain their
-own licenses. In particular, the Philharmonia Orchestra sound samples are
-CC-BY-SA-4.0, and the MERT checkpoint is CC-BY-NC-4.0 (non-commercial). The
-ESC-50 and DEMAND noise corpora carry their own terms. See README.md and the
-upstream sources before redistributing any data or weights.
-
 MIT License
 
 Copyright (c) 2026 Allan Luo Yu, Max Liu, Gavin Hu, and Tariq Hossain
