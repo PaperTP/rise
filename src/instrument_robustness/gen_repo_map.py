@@ -27,7 +27,6 @@ TOP_LEVEL = {
     "all-samples/": "Philharmonia DATA ROOT (RISE_DATA_ROOT default). pipeline/ is tracked; work/, features/, checkpoints/ are gitignored.",
     "tinysol/": "TinySOL small tracked artifact mirror (pipeline CSVs only). Real TinySOL audio lives under RISE_TINYSOL_ROOT.",
     "artifacts/": "Committed model checkpoints, clean results, and noise results. One subdir per model, plus <model>/noise/.",
-    "model_bundle/": "All six models' training/eval code copied into one folder for hand-off; drift from src/ is a build failure (bundle_models.py).",
     "models/": "All six trained weight files in one flat folder with self-describing names (assembled by bundle_weights.py).",
     "docs/": "Design and protocol docs, including the frozen noise and failure-analysis plans.",
     "tests/": "Unit tests: preprocessing, models, noise, robustness curves, and failure analysis.",

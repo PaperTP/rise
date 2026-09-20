@@ -237,3 +237,12 @@ Each adapter must reproduce its official clean macro-F1 and test count before no
 allowed. Results go to `artifacts/<model>/noise/`; generated audio and its per-file provenance
 remain under `$RISE_DATA_ROOT/work/windows_noisy/`. See `docs/NOISE_PLAN.md` for the fixed protocol and
 cluster-aware statistical analysis.
+
+## License
+
+Source code in this repository is released under the MIT License; see `LICENSE`.
+
+Data and model weights are not covered by it. The Philharmonia Orchestra sound
+samples are CC-BY-SA-4.0, the MERT checkpoint is CC-BY-NC-4.0 and therefore
+limited to non-commercial use, and the ESC-50 and DEMAND noise corpora carry
+their own terms. Check the upstream licenses before redistributing any of them.
