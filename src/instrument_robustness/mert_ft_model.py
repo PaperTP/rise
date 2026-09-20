@@ -43,7 +43,7 @@ class MERTFineTune(nn.Module):
         self.backbone = build_mert_model(model_id, revision)
         self.backbone.requires_grad_(True)
 
-        # LAYERDROP OFF BY DEFAULT. The go/no-go probe (scc/mert_ft_smoke.py) measured 195 of
+        # LAYERDROP OFF BY DEFAULT. The go/no-go smoke probe measured 195 of
         # 211 backbone tensors receiving gradients on one step -- exactly one transformer
         # layer's worth -- because train() mode leaves MERT's pretraining layerdrop active.
         # When a layer is dropped its hidden state passes through unchanged, so the mixture

@@ -11,7 +11,6 @@ description instead of silently absent. Branches are read from git.
 
 Install as a pre-commit hook so it refreshes on every commit:
 
-    git config core.hooksPath .githooks
 """
 from __future__ import annotations
 
@@ -30,7 +29,6 @@ TOP_LEVEL = {
     "artifacts/": "Committed model checkpoints, clean results, and noise results. One subdir per model, plus <model>/noise/.",
     "model_bundle/": "All six models' training/eval code copied into one folder for hand-off; drift from src/ is a build failure (bundle_models.py).",
     "models/": "All six trained weight files in one flat folder with self-describing names (assembled by bundle_weights.py).",
-    "scc/": "BU SCC (SGE) qsub job scripts and their README.",
     "docs/": "Design and protocol docs, including the frozen noise and failure-analysis plans.",
     "tests/": "Unit tests: preprocessing, models, noise, robustness curves, and failure analysis.",
     "legacy/": "Retired code and 9-class-era artifacts, kept for provenance. Not on the active path.",

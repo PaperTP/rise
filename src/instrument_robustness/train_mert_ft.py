@@ -12,7 +12,7 @@ are fine-tuned. The comparison is confounded until MERT is adapted the same way.
 PRECONDITIONS
   * Step 5 has produced windows.csv with train and val splits (asserted by load_mert_examples).
   * The MERT fine-tuning path has been shown to backprop in this environment
-    (scc/mert_ft_smoke.py returns GO).
+    (the smoke probe returns GO).
 
 POSTCONDITIONS
   * best_finetune.pt holds the state dict of the epoch with the highest validation macro-F1,
@@ -129,7 +129,7 @@ def main() -> int:
     if device.type != "cuda":
         raise RuntimeError(
             "Refusing to fine-tune a 95M backbone on CPU -- submit this through "
-            "scc/mert_finetune.qsub, which requests a GPU."
+            "a GPU job script."
         )
     seed_everything(args.seed, torch)
 

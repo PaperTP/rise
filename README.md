@@ -180,7 +180,6 @@ python -m instrument_robustness.finalize_mert
 
 The finalizer uses the validation-selected learning rate and epoch, requires the exact saved MERT
 checkpoint revision, and refuses to run if test extraction or finalization has already started.
-On BU SCC, submit `scc/mert_probe.qsub` first and submit `scc/mert_finalize.qsub` only after
 validation review. The MERT checkpoint is licensed CC-BY-NC-4.0; this branch is appropriate for
 the project's non-commercial research use, but that license must be reviewed before any
 commercial use.
@@ -197,7 +196,6 @@ python -m instrument_robustness.train_panns --mode finetune
 The pretrained `Cnn14_mAP=0.431.pth` file must be under `$RISE_DATA_ROOT/checkpoints/`; its SHA-256
 is recorded in both the validation summary and selected checkpoint. After validation review, run
 the single sealed test evaluation with `python -m instrument_robustness.finalize_panns`. SCC job
-wrappers are `scc/panns_train.qsub` and `scc/panns_finalize.qsub`.
 
 ## Evaluate clean-trained models under noise
 
